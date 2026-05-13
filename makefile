@@ -1,17 +1,30 @@
-buildXoeai:
+buildG++:
 	g++ main.cpp -o XOEAI
-buildTest:
-	g++ ./tests/TestMain.cpp -o ./tests/TestMain
+buildClang:
+	clang -stdlib=libc++ -lc++ main.cpp -o XOEAI
 
-runXOEAI: ./XOEAI
+buildTestG++:
+	g++ ./tests/TestMain.cpp -o ./tests/TestMain
+buildTestClang:
+	clang -stdlib=libc++ -lc++ ./tests/TestMain.cpp -o ./tests/TestMain
+
+
+g++: buildG++
+	./XOEAI
+clang: buildClang
 	./XOEAI
 
-runTest: ./tests/TestMain
+
+testG++: buildTestG++
 	./tests/TestMain
 
-XOEAI: buildXoeai
+testClang: buildTestClang
+	./tests/TestMain
+
+
+run: ./XOEAI
 	./XOEAI
-test: buildTest
+runTest: ./tests/TestMain
 	./tests/TestMain
 
 clean:

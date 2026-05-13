@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <cassert>
 #include "../XOEngine.hpp"
 
 class Tester

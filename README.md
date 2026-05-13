@@ -15,10 +15,13 @@ The game features a simple AI using the MinMax algorithm.
 
 ### Helpful Commands
 
-- `make XOEAI` — compile and run the game  
-- `make runXOEAI` — run the compiled game again  
-- `make test` — compile and run the test suite  
-- `make runTest` — run the compiled test suite again  
+- `make g++` — compile and run the game for G++
+- `make clang` — compile and run the game for Clang 
+- `make testG++` — compile and run the test suite for G++
+- `make testClang` — compile and run the test suite for Clang
+- `make runTest` — run the compiled test suite
+- `make run` — run the compiled game  
+
 - `make clean` — delete the generated executables
 
 ## Note
