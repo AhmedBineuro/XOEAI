@@ -1,6 +1,7 @@
 #pragma once
 #include "../Board.hpp"
 #include "../Evaluator.hpp"
+#include <climits>
 
 class MinMaxAi
 {
