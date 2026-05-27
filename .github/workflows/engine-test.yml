@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run : sudo apt install build-essential
-      - run : make test
+      - run : make testG++
